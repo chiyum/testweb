@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+
+/* 分隔線 */
+
+body{
+    font-family:微軟正黑體!important;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header{
+    background: url('../pic/city4.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 650px;
+    position: relative;
+}
+
+.header2{
+    background: url('../pic/city3.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 650px;
+    position: relative;
+}
+
+.header3{
+    background: url('../pic/city5.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 650px;
+    position: relative;
+}
+
+.menu{
+    background-color: rgb(51, 49, 45,0.9);
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.menu  img{
+    width: 200px;
+    height: 50px ;
+}
+
+.menu ul{
+    display: flex;
+	position: absolute;
+	right: 5%;
+}
+
+.menu li{
+	display: block;
+	position: relative;
+	width: 80px;
+	top: -30px;
+	margin: 0 20px;
+}
+
+.menu a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.menu a:hover{
+    color: #00cc99;
+	border-bottom: #00cc99 5px solid;
+}
+
+#m_li{
+	left: 30px;
+}
+
+
+.title{
+
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+
+}
+
+.title p{
+    color: #00cc99;
+    font-size: 34px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.title span{
+    color: white;
+}
+
+.links a{
+    color: white;
+    background-color: #00cc99;
+    border: 1px solid #00cc99;
+    border-radius: 5px;
+    width: 150px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 30%;
+    left: 7%;
+}
+
+.footer{
+    background-color: #1C1C1C;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer p{
+    color: white;
+    margin-right: 1%;
+}
+
+.footer span{
+    color: #00cc99;
+}
+
+.footer .img{
+    width: 30px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+
+/* 首頁結束 */
+/* 以下聯絡資訊 */
+
+.content{
+    margin: 20px 0px;
+    position: relative;
+}
+
+.tel ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box1{
+    
+    width: 170px;
+    height: 3px;
+    background-color: cadetblue;
+    margin: 0 auto;
+}
+
+.tel{
+    margin-top: 20px;
+}
+
+.tel li{
+    width: 31.333%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid #e1e1e1;
+    box-shadow: 5px 5px #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.tel p{
+    margin:20px;
+}
+
+.tel img{
+    width: 50px;
+}
+
+.tel span{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #4167b2;
+    margin: 5px;
+}
+
+.tel a{
+    text-decoration: none;
+    color: white;
+}
+
+/* 電話頁結束 */
+/* 以下關於我們 */
+
+.about{
+    display: flex;
+    margin-top: 20px;
+}
+
+.about p{
+    padding: 30px;
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+/* 關於我們結束 */
+/* 以下業務介紹 */
+
+.header4{
+    background: url('../pic/city6.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 650px;
+    position: relative;
+}
+
+.work{
+    margin-top: 20px;
+}
+
+.work ul{
+    display: flex;
+}
+
+.work li{
+    width: 31.333%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid #e1e1e1;
+    box-shadow: 5px 5px #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.work h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.work p{
+    margin:20px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.work img{
+    width: 100%;
+    height: 50%;
+}
+
+/* RWD */
