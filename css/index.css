@@ -90,7 +90,33 @@ body{
     height: 65px;
 }
 
+.menuPh{
+    display: none;
+}
+.click{
+    display: none;
+}
+
+.click div{
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 10px;
+}
+
+.clickOff{
+    display: none;
+}
+
+.clickOff div{
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 10px;
+}
+
 .menu  img{
+    margin-left: 5px;
     width: 200px;
     height: 50px ;
 }
@@ -133,7 +159,7 @@ body{
     position: absolute;
     bottom: 50%;
     left: 5%;
-
+    z-index: 98;
 }
 
 .title p{
@@ -259,14 +285,22 @@ body{
 /* 以下關於我們 */
 
 .about{
-    display: flex;
     margin-top: 20px;
 }
 
 .about p{
-    padding: 30px;
+    text-align: center;
+    padding:20px;
     font-size: 26px;
     line-height: 1.5;
+}
+
+.about img{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 1px solid #e1e1e1;
+    box-shadow: 5px 5px #e1e1e1;
 }
 
 /* 關於我們結束 */
@@ -285,6 +319,7 @@ body{
 
 .work ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .work li{
@@ -315,3 +350,131 @@ body{
 }
 
 /* RWD */
+
+@media (max-width:1024px) {
+    .wrap{
+        width: auto;
+    }
+
+    .menu{
+        justify-content: space-between;
+    }
+
+    .menu ul{
+        display: none;
+    }
+
+    .menuPh{
+        display: block;
+    }
+
+    .click{
+        display: block;
+        padding: 9px;
+        /* background-color: teal; */
+    }
+
+    .clickOff{
+        display: block;
+        padding: 9px;
+    }
+    
+
+    .menuPh{
+        /* border: red 1px solid; */
+        overflow: hidden;
+    }
+
+    .menuPh ul{
+        position: relative;
+        bottom: 230px;
+        transition: all 0.5s;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .menuPh a{
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        border-top: solid 1px white;
+        background-color: #878787
+    }
+
+    .menuPh p{
+        position: relative;
+        padding: 3px;
+        bottom: 2px;
+        color: white;
+        font-size: 32px;
+        border-top: 1px solid white;
+        border-radius:0 0 50% 50%;
+        background-color: #878787;
+    }
+    .menuPh p:hover{
+        background-color: #00cc99;
+    }
+
+    .menuPh a:hover{
+        background-color: #00cc99;
+    }
+
+    #bottom{
+        border-bottom: 2px solid white;
+    }
+}
+
+@media (max-width:980px){
+
+    .work li{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .tel li{
+        width: 48%;
+        margin-bottom: 20px;
+        height: 298px;
+    }
+
+}
+
+
+@media (max-width:680px){
+
+    .work li{
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .tel li{
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .about img{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+
+
+@media (max-width:520px){
+
+    .work li{
+
+        width: 80%;
+        
+    }
+    
+    .tel li{
+        
+        width: 80%;
+        
+    }
+}
