@@ -1,10 +1,11 @@
 let click =document.querySelector('.click');
 let off =document.querySelector('.ulC p')
 let menu = document.querySelector('.ulC');
-let tel =document.querySelector('.footer p')
-
+let tel =document.querySelector('.footer p');
+let housetel =document.querySelector('.housetel');
 click.addEventListener('click',closs,false);
 tel.addEventListener('click',tell,false);
+
 function closs(e){
     if(e.target.className ==='click'){
         menu.style.bottom = 0
@@ -25,3 +26,4 @@ function offClcik(e){
 function tell(e){
     window.location.href='tel://0932594115'
 }
+
