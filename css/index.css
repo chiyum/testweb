@@ -70,7 +70,9 @@ body{
 }
 
 .header2{
-    background: url('../pic/20.jfif') no-repeat;
+    background: url('../pic/7.jfif') no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgb(51, 49, 45,0.3);
     background-size: 100% 100%;
     height: 650px;
     position: relative;
@@ -204,6 +206,10 @@ body{
 .footer p{
     color: white;
     margin-right: 1%;
+}
+
+.footer a:visited{
+    color: white;
 }
 
 .footer span{
@@ -350,6 +356,13 @@ body{
     height: 50%;
 }
 
+.housetel{
+    color: black;
+}
+
+.phone{
+    color: black;
+}
 /* RWD */
 
 @media (max-width:1024px) {
