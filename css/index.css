@@ -263,6 +263,7 @@ body{
 
 .tel p{
     margin:20px;
+    color: black;
 }
 
 .tel img{
@@ -479,5 +480,6 @@ body{
     }
     .footer p{
         margin-right: 15px;
+        color: white;
     }
 }
