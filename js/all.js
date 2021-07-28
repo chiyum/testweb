@@ -3,9 +3,9 @@ let off =document.querySelector('.ulC p')
 let menu = document.querySelector('.ulC');
 let tel =document.querySelector('.footer p');
 let housetel =document.querySelector('.housetel');
+let body =document.body;
 click.addEventListener('click',closs,false);
 tel.addEventListener('click',tell,false);
-
 function closs(e){
     if(e.target.className ==='click'){
         menu.style.bottom = 0
@@ -14,13 +14,13 @@ function closs(e){
         menu.style.bottom = 230+"px"
         click.setAttribute("class","click")
     }
-    
 }
 
 off.addEventListener('click',offClcik,false)
 
 function offClcik(e){
     menu.style.bottom =230+"px"
+    click.setAttribute("class","click")
 }
 
 function tell(e){
