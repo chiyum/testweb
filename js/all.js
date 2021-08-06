@@ -3,7 +3,7 @@ let off =document.querySelector('.ulC p')
 let menu = document.querySelector('.ulC');
 let tel =document.querySelector('.footer p');
 let housetel =document.querySelector('.housetel');
-let body =document.body;
+let body =document.querySelector('.wrap');
 click.addEventListener('click',closs,false);
 tel.addEventListener('click',tell,false);
 function closs(e){
@@ -27,3 +27,4 @@ function tell(e){
     window.location.href='tel://0932594115'
 }
 
+body.style.height = innerHeight+'px'
