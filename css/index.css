@@ -499,6 +499,10 @@ body{
 
 @media (max-width:520px){
 
+    .header{
+        height: 700px;
+    }
+
     .work li{
 
         width: 80%;
