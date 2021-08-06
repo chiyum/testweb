@@ -26,5 +26,3 @@ function offClcik(e){
 function tell(e){
     window.location.href='tel://0932594115'
 }
-
-body.style.height = innerHeight+'px'
